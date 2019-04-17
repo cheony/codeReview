@@ -1,10 +1,10 @@
 #include <queue>
 
 template <typename T> 
-class emplatePriorityQueue {
+class TemplatePriorityQueue {
 	public:
-		templatePriorityQueue();
-		~templatePriorityQueue();
+		TemplatePriorityQueue();
+		~TemplatePriorityQueue();
 		bool empty() const;
 		const T& top() const;
 		int size();
