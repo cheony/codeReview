@@ -1,9 +1,7 @@
 #include <queue>
 
 template <typename T> 
-class templatePriorityQueue {
-	private:
-		std::priority_queue<T> storage;
+class emplatePriorityQueue {
 	public:
 		templatePriorityQueue();
 		~templatePriorityQueue();
@@ -12,4 +10,7 @@ class templatePriorityQueue {
 		int size();
 		void push(const T&);
 		void pop();	
+	
+	private:
+		std::priority_queue<T> storage;	
 };
