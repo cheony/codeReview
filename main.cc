@@ -2,7 +2,7 @@
 #include <cstdlib>
 #include "priority_queue.h"
 
-using namespace std;
+//using namespace std;
 
 template <typename T>
 void pushQueue(templatePriorityQueue<T>* Que, int data){
