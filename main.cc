@@ -6,13 +6,13 @@
 
 template <typename T>
 void pushQueue(templatePriorityQueue<T>* Que, int data){
-	cout << "[+] Integer "<< data <<" pushed in the Priority Queue." << endl;
+	std::cout << "[+] Integer "<< data <<" pushed in the Priority Queue." << endl;
 	Que->push(data);
 }
 
 template<typename T>
 void popQueue(templatePriorityQueue<T>* Que){
-	cout << "[+] Integer "<< Que->top() << " will be poped from the Priority Queue." << endl;
+	std::cout << "[+] Integer "<< Que->top() << " will be poped from the Priority Queue." << endl;
 	Que->pop();
 }
 
@@ -22,7 +22,7 @@ int main(int argc, char* argv[]){
 
 	//empty check
 	if(priQueue.empty()){
-		cout << "[!] Priority Queue is empty - initalized" << endl;
+		std::cout << "[!] Priority Queue is empty - initalized" << endl;
 	}
 
 	// push
@@ -45,18 +45,18 @@ int main(int argc, char* argv[]){
 
 	//empty & size
 	if(priQueue.empty()){
-		cout << "[-] Priority Queue is empty. - Push method did not work!" << endl;
+		std::cout << "[-] Priority Queue is empty. - Push method did not work!" << endl;
 		return -1;
 	}
 	else{
-		cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() <<endl;
+		std::cout << "[+] Priority Queue has data. - Queue Size : " << priQueue.size() <<endl;
 	}
 
 	// pop twice
 	popQueue(&priQueue);
 	popQueue(&priQueue);
 
-	cout << "[+] Now, Top element of Priority Queue is " << priQueue.top() << endl;
+	std::cout << "[+] Now, Top element of Priority Queue is " << priQueue.top() << endl;
 	
 	return 0;
 }
